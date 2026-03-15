@@ -1,0 +1,365 @@
+
+body{
+    
+     background-color: #f8fafc;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin: 0;
+     width: 100%;
+
+}
+.container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.navbar{
+    width: 100%;
+    background-color: #2e3a4c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    gap: 20px;
+    padding: 15px;
+}
+
+.navbar a{
+    color: #f1f5f9; 
+    text-decoration: none; 
+    font-weight: bold;
+    padding: 0 15px;
+
+}
+
+button{
+    border-radius: 5px;
+    background-color: #4a69bd;
+    color: black;
+    cursor: pointer;
+
+}
+/* Styling for the Lesson Page Header */
+.lesson-header {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    color: #2e3a4c;
+}
+
+.lesson-header i {
+    font-size: 50px;
+    color: #4a69bd;
+    margin-bottom: 10px;
+}
+
+.lesson-header p {
+    color: #64748b;
+    font-size: 0.95rem;
+}
+
+/* Enhancing the List into Cards */
+.lessons {
+    width: 90%; /* Responsive width */
+    max-width: 600px;
+}
+.l1 {
+    padding: 0;
+}
+
+.l1 li {
+    background-color: #ffffff;
+    margin: 10px 0;
+    border-radius: 12px; /* Smoother corners */
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+    padding: 0; /* Remove padding from li to make the whole area clickable */
+}
+
+.l1 li:hover {
+    border-color: #4a69bd;
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Making the entire row clickable */
+.l1 li a {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: #334155;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.l1 li a i:first-child {
+    color: #4a69bd;
+    margin-right: 15px;
+    font-size: 1.2rem;
+}
+
+.l1 li a span {
+    flex-grow: 1; /* Pushes the arrow to the right */
+    font-weight: 500;
+}
+
+.l1 li a .arrow {
+    font-size: 0.8rem;
+    color: #cbd5e1;
+    transition: color 0.3s;
+}
+
+.l1 li:hover .arrow {
+    color: #4a69bd;
+}
+
+/* Container for the Test */
+.test-container {
+    width: 90%;
+    max-width: 700px;
+    padding-bottom: 50px;
+}
+
+.test-header {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.back-link {
+    text-decoration: none;
+    color: #4a69bd;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+/* Question Card Styling */
+.question-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 25px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+}
+
+.question-text {
+    font-size: 1.5rem; /* Larger Kanji font */
+    font-weight: bold;
+    color: #2e3a4c;
+    margin-bottom: 15px !important;
+    border-bottom: 2px solid #f1f5f9;
+    padding-bottom: 10px;
+}
+
+/* Grid Layout for Answers */
+.answer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 10px;
+}
+
+/* Submit Button */
+.main-submit-btn {
+    background-color: #2ecc71;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 100%;
+}
+
+.main-submit-btn:hover {
+    background-color: #27ae60;
+    transform: scale(1.02);
+}
+
+/* Result*/
+#result {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    line-height: 1.6;
+}
+
+.hero-section {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.icon-box {
+    font-size: 80px;
+    color: #4a69bd;
+    margin-bottom: 20px;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    color: #2e3a4c;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 1.1rem;
+    color: #64748b;
+    margin-bottom: 30px;
+}
+.main-start-btn {
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    border: none;
+    transition: transform 0.2s, background-color 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-start-btn:hover {
+    background-color: #324c91;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(74, 105, 189, 0.3);
+}
+
+.main-start-btn i {
+    font-size: 1.4rem;
+}
+
+/* Navbar Icon Spacing */
+.navbar a i {
+    margin-right: 5px;
+}
+
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.5);
+    backdrop-filter: blur(4px);
+}
+
+/* Modal Content Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 30px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    position: relative;
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from {transform: translateY(-50px); opacity: 0;}
+    to {transform: translateY(0); opacity: 1;}
+}
+
+/* Close Button */
+.close-btn {
+    background-color: #4a69bd;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.modal-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+/* About Page Specific Styles */
+.about-section {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    max-width: 500px;
+    text-align: center;
+}
+
+.about-icon {
+    font-size: 50px;
+    color: #4a69bd;
+    margin-bottom: 20px;
+}
+
+.about-card h2 {
+    color: #2e3a4c;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.about-card p {
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* Feature List Styling */
+.about-features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.85rem;
+    color: #475569;
+}
+
+.feature i {
+    font-size: 1.2rem;
+    color: #2ecc71; /* Green color for success/features */
+    margin-bottom: 5px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #f1f5f9;
+    margin: 20px 0;
+}
+
+.thanks-note {
+    font-style: italic;
+    font-weight: bold;
+    color: #4a69bd !important;
+}
+
+
+
+
+
