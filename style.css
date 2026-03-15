@@ -192,6 +192,19 @@ button{
     line-height: 1.6;
 }
 
+.correct-label {
+    background-color: #d4edda !important;
+    color: #155724 !important;            
+    border: 1px solid #c3e6cb;
+}
+
+
+.wrong-label {
+    background-color: #f8d7da !important; 
+    color: #721c24 !important;           
+    border: 1px solid #f5c6cb;
+}
+
 .hero-section {
     padding: 60px 20px;
     max-width: 800px;
